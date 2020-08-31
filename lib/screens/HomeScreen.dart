@@ -2,6 +2,7 @@
 import "package:flutter/material.dart";
 import 'package:listtodo_get/controllers/ToDoController.dart';
 import 'package:get/get.dart';
+//import 'package:listtodo_get/screens/CaruselOnboarding.dart';
 import 'package:listtodo_get/screens/ToDoScreen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,6 +12,20 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Getx ToDo List"),
+        //  actions: <Widget>[
+        //  Padding(
+        //    padding: EdgeInsets.only(right: 20.0),
+        //    child: GestureDetector(
+        //      onTap: () {
+        //        Get.to(MyApp());
+        //      },
+        //      child: Icon(
+        //        Icons.arrow_right,
+        //        size: 26.0,
+        //      ),
+        //    )
+        //  ),
+        //],
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
