@@ -34,7 +34,15 @@ class GetXOnboarding extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: Icon(Icons.edit),
+      floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Indicator(indicatorIndex: 0,),
+            Indicator(indicatorIndex: 1,),
+            Indicator(indicatorIndex: 2,),
+          ],
+        ),
     );
   }
 }
@@ -131,7 +139,7 @@ class ImageAndText extends StatelessWidget {
                 height: 40,
                 child: Center(
                   child: Text(
-                    "Inicia",
+                    "List To do",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16
@@ -141,6 +149,26 @@ class ImageAndText extends StatelessWidget {
               ),
             ),
           ]),
+      ),
+    );
+  }
+}
+
+class Indicator extends StatelessWidget {
+  final indicatorIndex;
+  final InitOnboardingController initOnboardingController = Get.find();
+
+  Indicator({this.indicatorIndex});
+  @override
+  Widget build(BuildContext context) {
+    print("asd "+indicatorIndex.toString()+ " "+ initOnboardingController.index.toString());
+    return Container(
+      height: 8,
+      width: 8,
+      margin: EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: initOnboardingController.index == indicatorIndex ? Colors.black87 : Colors.grey,
       ),
     );
   }

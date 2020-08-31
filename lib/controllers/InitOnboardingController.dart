@@ -9,5 +9,7 @@ class InitOnboardingController extends GetxController{
 
   onPageChanged(int value) {
     _index = value;
+    print("_index "+_index.toString());
+    update();
   }
 }
