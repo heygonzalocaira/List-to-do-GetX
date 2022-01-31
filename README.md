@@ -11,7 +11,7 @@ Building a List to do App with Flutter
 |     |     |    |
 | :-: | :-: |:-: |
 |  Editing Tasks | Adding Tasks | Onboarding |
-| <img src="./assets/videoGif.gif" height="300" /> | <img src="./assets/video2Gif.gif" height="300" /> | <img src="./assets/onboarding.gif" height="300" /> |
+| <img src="./assets/videoGif.gif" height="500" /> | <img src="./assets/video2Gif.gif" height="500" /> | <img src="./assets/onboarding.gif" height="500" /> |
 
 ## Why flutter?
 
